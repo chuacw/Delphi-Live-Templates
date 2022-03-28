@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="cmr" invoke="manual">
+		<point name="recordname">
+			<text>
+				MyRecord
+			</text>
+			<hint>
+				record name
+			</hint>
+		</point>
+		<point name="fieldname">
+			<text>
+				MyFieldName
+			</text>
+			<hint>
+				field name
+			</hint>
+		</point>
+		<point name="fieldtype">
+			<text>
+				MyFieldType
+			</text>
+			<hint>
+				field type
+			</hint>
+		</point>
+		<description>
+			chuacw's custom managed record declaration (full)
+		</description>
+		<author>
+			chuacw
+		</author>
+		<code language="Delphi" context="typedecl" delimiter="|"><![CDATA[T|recordname| = record
+private
+|*| // private declarations
+|*| F|fieldname|: |fieldtype|;
+public
+|*| // public declarations
+|*| /// <summary>
+|*| ///   Makes a copy of T|recordname| from Src to Dest
+|*| /// </summary>
+|*|class operator Assign(var Dest, Src: T|recordname|);
+|*| /// <summary>
+|*| ///   Does any finalization necessary on Dest
+|*| /// </summary>
+|*|class operator Finalize(var Dest: T|recordname|);
+|*| /// <summary>
+|*| ///   Initializes an instance of T|recordname|
+|*| /// </summary>
+|*|class operator Initialize(out Dest: T|recordname|);
+|end|end;
+]]>
+		</code>
+	</template>
+</codetemplate>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="recop" invoke="manual">
+		<point name="recordType">
+			<text>
+				MyRecord
+			</text>
+			<hint>
+				record name
+			</hint>
+		</point>
+
+		<point name="typeA">
+			<text>
+				type1
+			</text>
+			<hint>
+				record name
+			</hint>
+		</point>
+
+		<point name="typeB">
+			<text>
+				type2
+			</text>
+			<hint>
+				record name
+			</hint>
+		</point>
+
+		<point name="resultType">
+			<text>
+				myResultType
+			</text>
+			<hint>
+				result type
+			</hint>
+		</point>
+		<description>
+			chuacw's record operators declaration (full)
+		</description>
+		<author>
+			chuacw
+		</author>
+		<code language="Delphi" context="typedecl" delimiter="|"><![CDATA[T|recordType| = record
+|*|// Conversion
+|*|// Implicit typecast
+|*|class operator Implicit(a: T|recordType|): |resultType|; overload;
+|*|// Explicit typecast
+|*|class operator Explicit(a: T|recordType|): |resultType|; overload;
+
+|*|// Unary -
+|*|class operator Negative(a: T|recordType|): |resultType|;
+
+|*|// Unary +
+|*|class operator Positive(a: T|recordType|): |resultType|;
+
+|*|// Unary Inc
+|*|class operator Inc(a: T|recordType|): |resultType|;
+
+|*|// Unary Dec
+|*|class operator Dec(a: T|recordType|): |resultType|;
+
+|*|// Unary not
+|*|class operator LogicalNot(a: T|recordType|): |resultType|;
+
+|*|// Unary Trunc
+|*|class operator Trunc(a: T|recordType|): |resultType|;
+
+|*|// Unary Round
+|*|class operator Round(a: T|recordType|): |resultType|;
+
+|*|// Set in
+|*|class operator In(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison =
+|*|class operator Equal(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison <>
+|*|class operator NotEqual(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison >
+|*|class operator GreaterThan(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison >=
+|*|class operator GreaterThanOrEqual(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison <
+|*|class operator LessThan(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison <=
+|*|class operator LessThanOrEqual(a: |typeA|; b: |typeB|): Boolean; overload;
+
+|*|// Comparison +
+|*|class operator Add(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison -
+|*|class operator Subtract(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison *
+|*|class operator Multiply(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison /
+|*|class operator Divide(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison div
+|*|class operator IntDivide(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison mod
+|*|class operator Modulus(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison shl
+|*|class operator LeftShift(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison shr
+|*|class operator RightShift(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison and
+|*|class operator LogicalAnd(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison or
+|*|class operator LogicalOr(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison xor
+|*|class operator LogicalXor(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison and
+|*|class operator BitwiseAnd(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison or
+|*|class operator BitwiseOr(a: |typeA|; b: |typeB|): |resultType|;
+
+|*|// Comparison xor
+|*|class operator BitwiseXor(a: |typeA|; b: |typeB|): |resultType|;
+end;
+|end|
+]]>
+		</code>
+	</template>
+</codetemplate>
