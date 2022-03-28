@@ -51,7 +51,7 @@ public
 |*| ///   Initializes an instance of T|recordname|
 |*| /// </summary>
 |*|class operator Initialize(out Dest: T|recordname|);
-|end|end;
+|end|end align 16;
 ]]>
 		</code>
 	</template>

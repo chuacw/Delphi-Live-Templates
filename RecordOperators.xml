@@ -93,48 +93,48 @@
 |*|// Comparison <=
 |*|class operator LessThanOrEqual(a: |typeA|; b: |typeB|): Boolean; overload;
 
-|*|// Comparison +
+|*|// Binary +
 |*|class operator Add(a: |typeA|; b: |typeB|): |resultType|;
 
 |*|// Comparison -
 |*|class operator Subtract(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison *
+|*|// Binary *
 |*|class operator Multiply(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison /
+|*|// Binary /
 |*|class operator Divide(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison div
+|*|// Binary div
 |*|class operator IntDivide(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison mod
+|*|// Binary mod
 |*|class operator Modulus(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison shl
+|*|// Binary shl
 |*|class operator LeftShift(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison shr
+|*|// Binary shr
 |*|class operator RightShift(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison and
+|*|// Binary and
 |*|class operator LogicalAnd(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison or
+|*|// Binary or
 |*|class operator LogicalOr(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison xor
+|*|// Binary xor
 |*|class operator LogicalXor(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison and
+|*|// Binary and
 |*|class operator BitwiseAnd(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison or
+|*|// Binary or
 |*|class operator BitwiseOr(a: |typeA|; b: |typeB|): |resultType|;
 
-|*|// Comparison xor
+|*|// Binary xor
 |*|class operator BitwiseXor(a: |typeA|; b: |typeB|): |resultType|;
-end;
+end align 16;
 |end|
 ]]>
 		</code>
